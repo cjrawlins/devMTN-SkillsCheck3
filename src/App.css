@@ -1,38 +1,102 @@
 .App {
-  text-align: center;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ----- Auth ----- */
+.Auth {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(90deg, #FF70A6, #FF9770, #FFD670, #E9FF70);
+  /* For Children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.auth-login-container {
+  height: 500px;
+  width: 500px;
+  background: linear-gradient(90deg, #FF9770, #FFD670);
+  box-shadow: 0px 5px 50px 1px grey;
+  border-radius: 2%;
+   /* For Children */
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.auth-title {
+  color: white;
+  font-size: 80px;
+  font-weight: 700;
+}
+
+
+/* ----- Nav ----- */
+.Nav { 
+  height: 100vh;
+  width: 100px;
+  background: linear-gradient(0deg, #FF70A6, #FF9770);
+  /* box-shadow: 1px 0px grey; */
+  /* For Children */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.nav-top-container {
+  height: 300px;
+  width: 100%;
+  /* box-shadow: 10px 0px black; */
+  /* For Children */
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-around;
+}
+
+.nav-profile-container {
+  height: 120px;
+  width: 100%;
+  /* For Children */
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.nav-profile-image {
+  height: 70px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.nav-profile-name {
   color: white;
+  font-size: 12px;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-link-images {
+  height: 40px;
+  width: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-bottom-container {
+  height: 100px;
+  width: 100%;
+  /* For Children */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
+
+/* ----- Dashboard ----- */
+.Dashboard {
+  width: 100vw;
+
+}
+
+/* ----- Form ----- */
